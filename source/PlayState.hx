@@ -2162,7 +2162,7 @@ class PlayState extends MusicBeatState
 		{
 			health -= 0.00;
 
-			songScore -=;
+			songScore -= 0;
 
 			FlxG.sound.play('assets/sounds/missnote' + FlxG.random.int(1, 3) + TitleState.soundExt, FlxG.random.float(0.1, 0.2));
 			// FlxG.sound.play('assets/sounds/missnote1' + TitleState.soundExt, 1, false);
