@@ -1660,6 +1660,7 @@ class PlayState extends MusicBeatState
 					{
 						health -= 0.0475;
 						vocals.volume = 0;
+						combo = 0
 					}
 
 					daNote.active = false;
@@ -2159,14 +2160,9 @@ class PlayState extends MusicBeatState
 	{
 		if (!boyfriend.stunned)
 		{
-			health -= 0.04;
-			if (combo > 5)
-			{
-				gf.playAnim('sad');
-			}
-			combo = 0;
+			health -= 0.00;
 
-			songScore -= 10;
+			songScore -=;
 
 			FlxG.sound.play('assets/sounds/missnote' + FlxG.random.int(1, 3) + TitleState.soundExt, FlxG.random.float(0.1, 0.2));
 			// FlxG.sound.play('assets/sounds/missnote1' + TitleState.soundExt, 1, false);
